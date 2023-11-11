@@ -13,6 +13,7 @@
   "type": "module",
   "dependencies": {
     "@libsql/client": "^0.3.6",
-    "libsql-stateless": "^2.4.3"
+    "libsql-stateless": "^2.4.3",
+    "libsql-stateless-easy": "^1.2.1"
   }
 }
