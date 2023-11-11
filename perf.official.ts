@@ -1,11 +1,11 @@
 import { createClient } from "@libsql/client/web";
-import { skjdgfksg } from "./conf";
+import { conf } from "./conf";
 
 (async () => {
     console.log("running @libsql/client/web");
     const client = createClient({
-        url: skjdgfksg.db_url,
-        authToken: skjdgfksg.authToken
+        url: conf.db_url,
+        authToken: conf.authToken
     });
     
     console.time("client.batch");

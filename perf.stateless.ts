@@ -1,10 +1,9 @@
 import { libsqlExecute, libsqlBatch} from "libsql-stateless";
-import { skjdgfksg } from "./conf";
+import { conf } from "./conf";
 
 (async () => {
     console.log("running libsql-stateless");
-    const conf = skjdgfksg;
-    
+        
     console.time("libsqlBatch");
     const res = await libsqlBatch(conf, [
         {stmt: {
