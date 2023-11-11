@@ -17,7 +17,13 @@ export const conf = {
 4. `npm i`
 
 # run perf tests
-`npm run perf:all`
+`npm run perf:all` \
+but this will be inaccurate due to cold-starts.
+
+I suggest running:
+`watch -c -n 0.5 -x npm run perf:all` \
+for sustained and more accurate results.
+
 
 # for windows
 i dont have any windows machine.\
