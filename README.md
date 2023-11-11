@@ -3,6 +3,8 @@
 2. ##  [`libsql-stateless-easy`](https://github.com/DaBigBlob/libsql-stateless-easy)
 3. ##  [`@libsql/client/web`](https://github.com/libsql/libsql-client-ts)
 
+# THIS IS UNDER WORK
+
 # you need
 1. a unix-like os (macos, bsd, linux, etc); for windows see last
 2. have [bun](https://bun.sh/docs/installation) and [`watch`](https://www.man7.org/linux/man-pages/man1/watch.1.html) installed
