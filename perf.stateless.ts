@@ -2,6 +2,7 @@ import { libsqlExecute, libsqlBatch} from "libsql-stateless";
 import { skjdgfksg } from "./conf";
 
 (async () => {
+    console.log("running libsql-stateless");
     const conf = skjdgfksg;
     
     console.time("libsqlBatch");

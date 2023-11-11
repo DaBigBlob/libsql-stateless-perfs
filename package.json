@@ -8,7 +8,10 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "perf": "bun run ./perf.ts"
+    "perf:official": "bun run ./perf.official.ts",
+    "perf:stateless": "bun run ./perf.stateless.ts",
+    "perf:stateless-easy": "bun run ./perf.easy.ts",
+    "perf:all": "npm run perf:official && npm run perf:stateless && npm run perf:stateless-easy"
   },
   "type": "module",
   "dependencies": {
