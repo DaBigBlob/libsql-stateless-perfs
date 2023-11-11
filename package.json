@@ -11,7 +11,8 @@
     "perf:official": "bun run ./perf.official.ts",
     "perf:stateless": "bun run ./perf.stateless.ts",
     "perf:stateless-easy": "bun run ./perf.easy.ts",
-    "perf:all": "npm run perf:official && npm run perf:stateless-easy && npm run perf:stateless"
+    "perf:all": "npm run perf:official && npm run perf:stateless-easy && npm run perf:stateless",
+    "perf:sustained": "watch -c -n 0.5 -x npm run perf:all"
   },
   "type": "module",
   "dependencies": {

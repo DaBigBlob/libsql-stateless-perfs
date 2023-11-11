@@ -5,7 +5,7 @@
 
 # you need
 1. a unix-like os (macos, bsd, linux, etc); for windows see last
-2. have [bun](https://bun.sh/docs/installation) installed
+2. have [bun](https://bun.sh/docs/installation) and [`watch`](https://www.man7.org/linux/man-pages/man1/watch.1.html) installed
 3. create `conf.ts` as:
 ```ts
 //in conf.ts
@@ -17,12 +17,7 @@ export const conf = {
 4. `npm i`
 
 # run perf tests
-`npm run perf:all` \
-but this will be inaccurate due to cold-starts.
-
-I suggest running:
-`watch -c -n 0.5 -x npm run perf:all` \
-for sustained and more accurate results.
+`npm run perf:sustained`
 
 
 # for windows
