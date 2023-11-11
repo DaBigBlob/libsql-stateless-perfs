@@ -1,0 +1,18 @@
+{
+  "name": "test-my-packages",
+  "module": "index.ts",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "perf": "bun run ./perf.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@libsql/client": "^0.3.6",
+    "libsql-stateless": "^2.4.3"
+  }
+}
