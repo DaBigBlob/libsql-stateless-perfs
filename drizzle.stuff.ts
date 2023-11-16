@@ -10,7 +10,6 @@ import { contacts } from "./drizzle/schema";
     });
 
     const db = drizzle(client);
- 
-    const result = await db.select().from(contacts).all();
-    console.log(result);
+
+    console.log(await db.select().from(contacts).all());
 })();
