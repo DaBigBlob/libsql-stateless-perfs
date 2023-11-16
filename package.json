@@ -20,6 +20,6 @@
     "@libsql/client": "^0.3.6",
     "drizzle-orm": "^0.29.0",
     "libsql-stateless": "^2.7.4",
-    "libsql-stateless-easy": "^1.4.6"
+    "libsql-stateless-easy": "^1.4.7"
   }
 }
