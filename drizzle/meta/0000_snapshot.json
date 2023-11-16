@@ -1,0 +1,73 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "5",
+  "dialect": "sqlite",
+  "tables": {
+    "contacts": {
+      "name": "contacts",
+      "columns": {
+        "contact_id": {
+          "autoincrement": false,
+          "name": "contact_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "first_name": {
+          "autoincrement": false,
+          "name": "first_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_name": {
+          "autoincrement": false,
+          "name": "last_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "email": {
+          "autoincrement": false,
+          "name": "email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "phone": {
+          "autoincrement": false,
+          "name": "phone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "wife_id": {
+          "autoincrement": false,
+          "name": "wife_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "children": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "children",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}

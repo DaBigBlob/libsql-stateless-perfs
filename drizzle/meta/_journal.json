@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1700168243505,
+      "tag": "0000_free_cloak",
+      "breakpoints": true
+    }
+  ]
+}
