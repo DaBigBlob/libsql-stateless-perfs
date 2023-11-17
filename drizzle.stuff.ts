@@ -11,5 +11,6 @@ import { contacts } from "./drizzle/schema";
 
     const db = drizzle(client);
 
-    console.log(await db.select().from(contacts).all());
+    const res = await db.select().from(contacts).all()
+    console.log(res);
 })();
