@@ -1,15 +1,15 @@
-import { createClient, libsqlBatch, libsqlExecute } from "libsql-stateless-easy";
+import { createClient } from "@libsql/client/web";
 import { conf } from "./conf";
 
 (async () => {
-    console.log("running libsql-stateless-easy");
-    
-    console.time("libsqlBatch");
-    const clinet = createClient({
+    console.log("running @libsql/client/web");
+    const client = createClient({
         url: conf.db_url,
         authToken: conf.authToken
     });
-    const res = await clinet.batch([
+    
+    console.time("client.batch");
+    const res = await client.batch([
         {
             sql: "select * from contacts where contact_id = ?;",
             args: [3]
@@ -27,18 +27,18 @@ import { conf } from "./conf";
             args: {kkl: 6}
         }
     ]);
-    console.timeEnd("libsqlBatch");
+    console.timeEnd("client.batch");
 
-    console.log(!!res);
+    console.log(res[0]);
 
 
 
-    console.time("libsqlExecute");
-    const res2 = await clinet.execute({
+    console.time("client.execute");
+    const res2 = await client.execute({
         sql: "select first_name, last_name, email, contact_id from contacts where contact_id = ?;",
         args: [1]
     });
-    console.timeEnd("libsqlExecute");
+    console.timeEnd("client.execute");
 
     console.log(!!res2);
 })();

@@ -29,7 +29,7 @@ import { conf } from "./conf";
     ]);
     console.timeEnd("libsqlBatch");
 
-    console.log(!!res);
+    console.log(res[0]);
 
 
 
