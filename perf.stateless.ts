@@ -1,5 +1,5 @@
 import { libsqlExecute, libsqlBatch} from "libsql-stateless";
-import { conf } from "./conf";
+import { conf } from "./conf.js";
 
 (async () => {
     console.log("running libsql-stateless");

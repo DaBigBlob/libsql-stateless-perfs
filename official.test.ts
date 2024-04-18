@@ -1,5 +1,5 @@
 import { createClient } from "@libsql/client/web";
-import { conf } from "./conf";
+import { conf } from "./conf.js";
 
 (async () => {
     console.log("running @libsql/client/web");

@@ -1,5 +1,5 @@
 import type { Config } from "drizzle-kit";
-import { conf } from "./conf";
+import { conf } from "./conf.js";
  
 export default {
     schema: "./drizzle/schema.ts",

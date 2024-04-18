@@ -1,7 +1,7 @@
 import { createClient } from "libsql-stateless-easy";
 import { drizzle } from 'drizzle-orm/libsql';
-import { conf } from "./conf";
-import { contacts } from "./drizzle/schema";
+import { conf } from "./conf.js";
+import { contacts } from "./drizzle/schema.js";
 
 (async () => {
     const client = createClient({

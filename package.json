@@ -13,7 +13,10 @@
     "perf:stateless": "bun run ./perf.stateless.ts",
     "perf:stateless-easy": "bun run ./perf.easy.ts",
     "perf:all": "npm run perf:official && npm run perf:stateless-easy && npm run perf:stateless",
-    "perf:sustained": "watch -c -n 0.5 -x npm run perf:all"
+    "perf:sustained": "watch -c -n 0.5 -x npm run perf:all",
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf ./dist",
+    "build:clean": "npm run clean && npm run build"
   },
   "type": "module",
   "dependencies": {
@@ -21,7 +24,7 @@
     "drizzle-orm": "^0.29.0",
     "libsql": "^0.2.0-pre.1",
     "libsql-client": "^0.6.3",
-    "libsql-stateless": "^2.7.4",
-    "libsql-stateless-easy": "^1.5.4"
+    "libsql-stateless": "^2.8.0-alpha.2",
+    "libsql-stateless-easy": "^1.6.0-alpha.2"
   }
 }
