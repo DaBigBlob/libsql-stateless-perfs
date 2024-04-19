@@ -25,6 +25,6 @@
     "libsql": "^0.2.0-pre.1",
     "libsql-client": "^0.6.3",
     "libsql-stateless": "^2.8.4",
-    "libsql-stateless-easy": "^1.6.2"
+    "libsql-stateless-easy": "^1.6.3"
   }
 }
