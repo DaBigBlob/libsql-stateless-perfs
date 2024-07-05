@@ -1,4 +1,4 @@
-import { createClient, libsqlBatch, libsqlExecute } from "libsql-stateless-easy";
+import { createClient} from "libsql-stateless-easy";
 import { conf } from "./conf.js";
 
 (async () => {
