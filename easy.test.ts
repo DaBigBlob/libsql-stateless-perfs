@@ -7,7 +7,8 @@ import { conf } from "./conf.js";
     console.time("libsqlBatch");
     const clinet = createClient({
         url: conf.db_url,
-        authToken: conf.authToken
+        authToken: conf.authToken,
+        disableCriticalChecks: true
     });
     const res = await clinet.batch([
         {
