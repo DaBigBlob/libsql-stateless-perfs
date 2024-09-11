@@ -21,10 +21,11 @@
   "type": "module",
   "dependencies": {
     "@libsql/client": "^0.5.3",
+    "drizzle": "^1.4.0",
     "drizzle-orm": "^0.31.2",
     "libsql": "^0.2.0-pre.1",
     "libsql-client": "^0.6.3",
     "libsql-stateless": "^2.8.6",
-    "libsql-stateless-easy": "^1.7.1"
+    "libsql-stateless-easy": "1.8.0"
   }
 }
