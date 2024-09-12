@@ -26,5 +26,3 @@ export const conf = {
 i dont have any windows machine.\
 you can obviously reuse `perf.easy.ts`, `perf.official.ts`, and `perf.stateless.ts`\
 but you have to run them individually or write scripts yourself.
-
-sub
